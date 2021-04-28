@@ -34,7 +34,7 @@ defmodule Boot do
   end
 
   defp get_planalto_coordinate() do
-    Input.set_planalto_coordinate("1 -> Quais as coordenada máximas X e Y do planalto ? \n")
+    Input.set_planalto_coordinate("1 -> Quais as coordenadas máximas X e Y do planalto ? \n")
     |> case do
       {:ok, planalto} -> planalto
       {:error, reason} -> shutdown(reason)
